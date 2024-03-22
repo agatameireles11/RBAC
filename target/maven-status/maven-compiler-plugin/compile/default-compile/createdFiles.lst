@@ -1,0 +1,4 @@
+com\mycompany\rbac\RBAC.class
+com\mycompany\rbac\Papel.class
+com\mycompany\rbac\Permissao.class
+com\mycompany\rbac\Usuario.class
