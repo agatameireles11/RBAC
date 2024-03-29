@@ -17,18 +17,19 @@ public class RBAC {
     Map<String, Papel> papeis = new HashMap<>();
     Map<String, Permissao> permissoes = new HashMap<>();
 
+    //função que adiciona os usuarios com seus respectivos papeis
     public void adicionarUsuario(String nome, String papel) {
         usuarios.put(nome, new Usuario(nome, papel));
     }
-
+    // adiicona os papeis
     public void adicionarPapel(String nome, String[] permissoes) {
         papeis.put(nome, new Papel(nome, permissoes));
     }
-
+    //adiciona as permissoes
     public void adicionarPermissao(String nome) {
         permissoes.put(nome, new Permissao(nome));
     }
-
+    //recebe o usuario e verifica se ele tem permissao para tal ação
     public boolean verificarAcesso(String nomeUsuario, String nomePermissao) {
         if (usuarios.containsKey(nomeUsuario)) {
             Usuario usuario = usuarios.get(nomeUsuario);
@@ -68,7 +69,7 @@ public class RBAC {
         sistema.adicionarUsuario("Castiel", "usuario");
         sistema.adicionarUsuario("Dean", "convidado");
 
-        //Teste
+        //Teste, para sair preciona 0
         Scanner ler = new Scanner(System.in);
         int opcao = 1;
         String nome;
