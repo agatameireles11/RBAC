@@ -1,6 +1,6 @@
 # RBAC
 Exercício Disciplina DCC075
 
-Exercício feito na Linguagem Java.
+*Criar um RBAC simples (na linguagem que quiser), e enviar o código ou link (e.g., github). Deixar o código comentado.*
 
 Arquivo MAIN: scr/main/java/com/mycompany/rbac/RBAC
